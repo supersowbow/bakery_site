@@ -1,0 +1,23 @@
+{% extends 'BakeryApp/base.html' %}
+
+
+
+{% block content %}
+<div class="form-container">
+    <h1 class="contact">Contact Us</h1>
+    <form action="index.html" method="post">
+        <label for="guest_name">Name:</label><br>
+        <input id="guest_name" type="text" name="guest_name"><br>
+
+        <label for="guest_email">Email:</label><br>
+        <input id="guest_email" type="email" name="guest_email"><br>
+
+        <label for="phone">Phone:</label><br>
+        <input id="phone" type="text" name="guest_phone"><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message"></textarea>
+        <button type="submit" name="button">Submit</button>
+    </form>
+</div>
+{% endblock %}

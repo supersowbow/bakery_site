@@ -1,0 +1,33 @@
+{% extends 'BakeryApp/base.html' %}
+
+{% block content %}
+<!-- Main Content -->
+
+<!-- Banner -->
+<div class="banner">
+    <img class="logo" src="../../static/img/bakery.jpg" alt="Bakery">
+    <h1 class="headline">ShortStack Bakery</h1>
+    <span class="tagline">The best bakery ever, hunty!.</span>
+</div>
+
+<!-- Cake Figure -->
+<div class="img-container">
+    <figure class="fig1">
+        <img class="img-spacing" src="../../static/img/blue_cake.jpg" alt="Picture of a cake">
+        <figcaption class="figcap1">
+            <h2>Events</h2>
+        </figcaption>
+    </figure>
+
+    <!-- Map Figure -->
+    <figure class="fig2">
+        <img class="img-spacing" src="../../static/img/us_map.jpg" alt="Picture of a cake">
+        <figcaption class="figcap2">
+            <h2>We Deliver Anywhere!</h2>
+        </figcaption>
+        <img class="icon-location" src="../../static/img/location.png" alt="Picture of a cake">
+    </figure>
+</div>
+
+
+{% endblock %}

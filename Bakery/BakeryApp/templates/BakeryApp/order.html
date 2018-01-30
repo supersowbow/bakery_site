@@ -1,0 +1,32 @@
+{% extends 'BakeryApp/base.html' %}
+
+{% block content %}
+<div class="form-container">
+    <h1 class="order">Order From Us</h1>
+    <!-- Form -->
+    <form action="../thanks_order.html" method="post">
+        <label for="guest_name">Name:</label><br>
+        <input id="guest_name" type="text" name="guest_name"><br>
+
+        <label for="phone_number">Phone Number:</label><br>
+        <input id="phone_number" type="text" name="phone"><br>
+
+        <label>Type of Cake:</label>
+        <select class="#" name="cake_types">
+            <option value="birthday">Birthday</option>
+            <option value="graduation">Graduation</option>
+            <option value="religious">Religious</option>
+            <option value="special">Special</option>
+            <option value="sports">Sports</option>
+            <option value="wedding">Wedding</option>
+        </select><br>
+
+        <label>Cake Size:</label><br>
+        <input id="one_fourth" type="radio" name="cake_size"><label for="one_fourth">1/4 Sheet</label><br>
+        <input id="one_half" type="radio" name="cake_size"><label for="one_half">Half Sheet</label><br>
+        <input id="full_sheet" type="radio" name="cake_size"><label for="full_sheet">Full Sheet</label><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</div>
+{% endblock %}

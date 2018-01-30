@@ -1,24 +1,24 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Create your views here.
 
+
+# Home/ index Section
 def index(request):
-    return HttpResponse("This is the index page.")
+    return render(request, 'BakeryApp/index.html')
 
-def gallery(request):
-    return HttpResponse("This is the gallery page.")
-def gallery_wedding(request):
-    return HttpResponse("This the wedding cake page from the gallery page.")
-
+# About Section
 def about(request):
-    return HttpResponse("This is the about page.")
+    return render(request, 'BakeryApp/about.html')
 
-def catering(request):
-    return HttpResponse("This is the catering page.")
-
+# Order Section
 def order(request):
-    return HttpResponse("This is the order page.")
+    return render(request, 'BakeryApp/order.html')
 
+# Thank You for Order Form
+def thanks_order(request):
+    return render(request, 'BakeryApp/thanks_order.html')
+
+# Contact Section
 def contact(request):
-    return HttpResponse("This is the contact page.")
+    return render(request, 'BakeryApp/contact.html')
